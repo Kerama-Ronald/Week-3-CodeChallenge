@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cinema Tickets</title>
-  <link rel="stylesheet" href="style.css">
+  
 </head>
 
 <body>
@@ -16,28 +16,25 @@
       </ul>
     </nav>
   </header>
+  <h1 style="color: red;">FLATDANGO</h1>
+  <div>
 
-  <main>
-    <section id="poster">
-      <h2 id="movie-title"></h2>
-      <img id="movie-poster" src="Untitled.jpeg" alt="Movie Poster">
-      <p id="description"></p>
-      <div id="showtime-tickets">
-        <div>
-          <p>Showtime:</p>
-          <p id="showtime"></p>
-        </div>
-        <div>
-          <p>Tickets Available:</p>
-          <p id="tickets-available"></p>
-        </div>
-        <button id="buy-ticket">Buy Ticket</button>
-        <button id="delete-movie">Delete Movie</button>
+      <div id="current-movie">
+          <img src="" alt="Poster" id="poster">
+          <h3 id="title"></h3>
+          <p>Duration: <span id="runtime"></span></p>
+          <p>Showtime: <span id="showtime"></span></p>
+          <p>Available Tickets: <span id="available-tickets"></span></p>
+          <button id="buy-ticket">Purchase Ticket</button>
       </div>
-    </section>
-  </main>
+  </div>
+  <br>
+  <div>
+      <h2 style="color: blue;"> Movies Today</h2>
+      <ul id="films"></ul>
+  </div>
 
   <script src="index.js"></script>
 </body>
-
 </html>
+ 
